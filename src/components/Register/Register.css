@@ -1,0 +1,78 @@
+.register {
+  margin-top: 70px;
+  display: grid;
+  place-items: center;
+}
+
+.register > img {
+  object-fit: contain;
+  height: 50px;
+}
+
+.register > h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__form__input__name__field {
+  display: flex;
+  column-gap: 20px;
+}
+
+.register__form__input__name__field > .register__form__input {
+  width: 270px;
+}
+
+.register__form__input {
+  display: flex;
+  align-self: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin-top: 25px;
+  width: 560px;
+  padding: 10px;
+}
+
+.register__form__input > label {
+  display: none;
+}
+
+.register__form__input > .MuiSvgIcon-root {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.register__form__input > input {
+  margin-left: 18px;
+  border: none;
+  background-color: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.register__form > button {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  width: 170px;
+  background-color: transparent;
+  border: 3px solid black;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
+.register__form > button:hover {
+  background-color: black;
+  color: white;
+}

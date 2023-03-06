@@ -12,7 +12,10 @@ import MainLayout from "./components/MainLayout/MainLayout";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
-import { loginAction as loginActionLoader } from "./api-endpoint/api";
+import {
+  loginAction as loginActionLoader,
+  registerAction as registerActionLoader,
+} from "./api-endpoint/api";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter(
@@ -21,7 +24,6 @@ const router = createBrowserRouter(
       path="/"
       element={<MainLayout></MainLayout>}
       errorElement={<ErrorPage />}
-      action={loginActionLoader}
     >
       <Route index element={<Dashboard></Dashboard>}></Route>
       <Route
@@ -29,7 +31,11 @@ const router = createBrowserRouter(
         element={<Login></Login>}
         action={loginActionLoader}
       ></Route>
-      <Route path="signup" element={<Register></Register>}></Route>
+      <Route
+        path="signup"
+        element={<Register></Register>}
+        action={registerActionLoader}
+      ></Route>
     </Route>
   )
 );
