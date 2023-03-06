@@ -10,7 +10,9 @@ import {
 
 import MainLayout from "./components/MainLayout/MainLayout";
 import Dashboard from "./components/Dashboard/Dashboard";
-import Login, { action as loginActionLoader } from "./components/Login/Login";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
+import { loginAction as loginActionLoader } from "./api-endpoint/api";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter(
@@ -27,6 +29,7 @@ const router = createBrowserRouter(
         element={<Login></Login>}
         action={loginActionLoader}
       ></Route>
+      <Route path="signup" element={<Register></Register>}></Route>
     </Route>
   )
 );

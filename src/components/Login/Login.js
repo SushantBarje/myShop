@@ -3,46 +3,30 @@ import "./Login.css";
 import APP_LOGO from "../../assets/logo.png";
 
 import { Form } from "react-router-dom";
-
-export const action = async ({ request, params }) => {
-  const data = await request.formData();
-  const updates = Object.fromEntries(data);
-  
-  return params;
-};
-
-// export async function action() {
-// c
-// }
+import { EmailOutlined, LockOutlined } from "@mui/icons-material";
 
 function Login() {
-  const emailRef = useRef();
-  const passwordRef = useRef();
-
   return (
     <div className="login">
       <img src={APP_LOGO} alt="" />
-      <h2>Log In</h2>
-      <Form method="POST">
+      <h1>Log In</h1>
+      <Form method="POST" className="login__form">
         <div className="form-input">
+          <EmailOutlined></EmailOutlined>
           <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={""}
-            placeholder="Enter Email"
-          ></input>
+          <input type="email" name="email" placeholder="Enter Email"></input>
         </div>
         <div className="form-input">
+          <LockOutlined></LockOutlined>
           <label htmlFor="password">Password</label>
           <input
             type="password"
             name="password"
-            defaultValue={""}
             placeholder="Enter Password"
           ></input>
         </div>
-        <button type="submit">Log in</button>
+
+        <button type="submit">Log In</button>
       </Form>
     </div>
   );

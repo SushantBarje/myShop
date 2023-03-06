@@ -1,4 +1,6 @@
 export const loginAction = async ({ request, params }) => {
-  console.log(request);
-  console.log(params);
+  const data = await request.formData();
+  const updates = Object.fromEntries(data);
+  console.log(updates);
+  return params;
 };

@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.333);
+}
+
+.header__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.header__left > img {
+  object-fit: cover;
+  height: 60px;
+  margin-right: 8px;
+  color: aliceblue;
+}
+
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.header__right__sign__up__link {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 650;
+  border: 2px solid black;
+  padding: 8px;
+  width: 120px;
+  border-radius: 25px;
+  transition: 0.2s;
+}
+
+.header__right__sign__up__link:hover {
+  color: white;
+  background-color: black;
+}
