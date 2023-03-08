@@ -1,0 +1,8 @@
+.productsList {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  row-gap: 50px;
+  padding-bottom: 100px;
+}

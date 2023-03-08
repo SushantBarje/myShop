@@ -25,7 +25,6 @@ const router = createBrowserRouter(
       element={<MainLayout></MainLayout>}
       errorElement={<ErrorPage />}
     >
-      <Route index element={<Dashboard></Dashboard>}></Route>
       <Route
         path="login"
         element={<Login></Login>}
@@ -36,6 +35,7 @@ const router = createBrowserRouter(
         element={<Register></Register>}
         action={registerActionLoader}
       ></Route>
+      <Route index element={<Dashboard></Dashboard>}></Route>
     </Route>
   )
 );

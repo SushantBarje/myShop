@@ -1,0 +1,45 @@
+.categories {
+  margin-left: 45px;
+  height: 70vh;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.categories > p {
+  padding: 10px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.categories > p:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* .categories::-webkit-scrollbar {
+  display: none;
+} */
+
+/* .categories {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */
