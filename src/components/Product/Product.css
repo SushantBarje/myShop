@@ -1,7 +1,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  height: 320px;
+  height: 420px;
   width: 300px;
   border-radius: 10px;
   overflow: hidden;
@@ -12,6 +12,7 @@
 .product > img {
   object-fit: contain;
   width: 300px;
+
 }
 .product__info {
   padding: 10px;

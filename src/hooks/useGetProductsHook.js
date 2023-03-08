@@ -1,9 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { getAllProducts } from "../api-endpoint/api";
 
-const useGetProductsHook = () => {
+export const useGetProductsHook = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    
-  })
+    (async () => {
+      const response = await getAllProducts();
+      setProducts(response);
+    })();
+  }, []);
+
+  return { products };
 };

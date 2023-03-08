@@ -41,5 +41,6 @@ export const getAllProducts = async () => {
         message: error.response.data.message,
       };
     });
+  console.log(response.data);
   return { status: response.status, message: response.data };
 };
